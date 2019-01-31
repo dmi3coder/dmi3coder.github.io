@@ -17,8 +17,7 @@ html, body {
 }
 
 .bg {
-    background-image: url(../img/bg.JPG);
-    background-repeat: round;
+    background: url(../img/bg_min.png) round;
 }
 
 .title-holder {
