@@ -20,9 +20,20 @@ html, body {
     background: url(../img/bg_min.png) round;
 }
 
+.main-holder {
+    overflow: auto;
+}
+
 .title-holder {
+    float: left;
     padding-top: 5vh;
     padding-left: 5vh;
+}
+
+.button-holder {
+    float: right;
+    padding-top: 5vh;
+    padding-right: 5vh
 }
 
 .link-holder {
@@ -40,7 +51,7 @@ h1, h3 {
     margin-left: 8pt;
 }
 
-div.link-holder i:hover {
+div.main-holder i:hover {
     color: green;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -50,7 +61,7 @@ div.link-holder i:hover {
     transition: .5s;
 }
 
-div.link-holder i {
+div.main-holder i {
     color: white;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -64,6 +75,7 @@ i.fa-facebook-square {
     color: #3C5A99;
     margin-left: 0;
 }
+
 div.link-holder i.fa-facebook-square:hover {
     color: #3C5A99;
 }
@@ -79,8 +91,15 @@ div.link-holder i.fa-github:hover {
 div.link-holder i.fa-linkedin:hover {
     color: #4875B4;
 }
+
 div.link-holder i.fa-stack-overflow:hover {
     color: #f48024;
 }
 
+div.button-holder i.fa-compass {
+    color: gray;
+}
 
+div.button-holder i.fa-compass:hover {
+    color: white;
+}
