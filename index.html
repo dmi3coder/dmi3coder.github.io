@@ -34,6 +34,11 @@
 <script src="./js/bootstrap.js"></script>
 <script src="./js/bootstrap.bundle.js"></script>
 <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const toParam = urlParams.get('to');
+    if(toParam == "donautech") {
+        window.location.replace("https://donau.tech/#/?from=dmi3y.de");
+    }
     // Set the date we're counting down to
     var countDownDate = new Date("Oct 26, 2020 22:00:00").getTime();
 
