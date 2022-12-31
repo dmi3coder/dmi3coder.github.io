@@ -3,69 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Dmitry Chaban</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/dmi3y.css">
 </head>
 <body>
 <div class="container fill bg">
     <div class="main-holder">
         <div class="title-holder">
-            <h1>Dmitry Chaban</h1>
-            <h3>Software Engineer</h3>
+            <h1>Dmytro Chaban</h1>
+            <h3>Software Engineer/Entrepreneur</h3>
             <div class="link-holder">
-                <a href="https://www.facebook.com/dmitry.android.chaban"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://github.com/dmi3coder"><i class="fa fa-github"></i></a>
-                <a href="https://www.instagram.com/dmi3y_de/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/dmi3coder/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://stackoverflow.com/users/4889035/dmitriy-chaban"><i
-                        class="fa fa-stack-overflow"></i></a>
+                <a href="https://github.com/dmi3coder"><i class="fa fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/dmytro__ch/"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="https://medium.com/@dmytro.ch"><i class="fa fa-brands fa-medium"></i></a>
+                <a href="https://www.linkedin.com/in/dmi3coder/"><i class="fa fa-brands fa-linkedin"></i></a>
+                <a href="https://stackoverflow.com/users/4889035/dmytro-chaban"><i
+                    class="fa fa-brands fa-stack-overflow"></i></a>
+                <a href="https://ieji.de/@dmytro_ch"><i class="fa fa-brands fa-mastodon"></i></a>
             </div>
         </div>
         <div class="button-holder">
             <a href="/scratchmap/"><i class="fa fa-compass"></i></a>
         </div>
     </div>
-    <p id="countdown"></p>
 </div>
 </body>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/bootstrap.bundle.js"></script>
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const toParam = urlParams.get('to');
-    if(toParam == "donautech") {
-        window.location.replace("https://donau.tech/#/?from=dmi3y.de");
-    }
-    // Set the date we're counting down to
-    var countDownDate = new Date("Oct 26, 2020 22:00:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-        }
-    }, 1000);
 </script>
 </html>
